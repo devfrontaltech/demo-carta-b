@@ -85,10 +85,21 @@ z-index:100;
 
 .nav-inner{
 display:flex;
-justify-content:center;
+justify-content:flex-start;
 gap:40px;
 padding:22px;
-overflow:auto;
+overflow-x:auto;
+overflow-y:hidden;
+white-space:nowrap;
+scrollbar-width:none;
+}
+
+.nav-inner::-webkit-scrollbar{
+display:none;
+}
+
+.nav-inner a{
+flex-shrink:0;
 }
 
 .nav-inner a{
